@@ -43,11 +43,11 @@ export default class Card extends Component{
 
                 <img src={pokemon.pokemon.sprites.front_default} className="Pokemon-imagem"></img>
             
-                <h3> Tipo: {pokemon.pokemon.types.map(item => ' ' + item.type.name).toString()} </h3>
+                <h2> Tipo: {pokemon.pokemon.types.map(item => ' ' + item.type.name).toString()} </h2>
             
-                <h3> Peso: {pokemon.pokemon.weight}  </h3>
+                <h2> Peso: {pokemon.pokemon.weight}  </h2>
             
-                <h3> Altura: {pokemon.pokemon.height}  </h3>
+                <h2> Altura: {pokemon.pokemon.height}  </h2>
 
             </div>
 
