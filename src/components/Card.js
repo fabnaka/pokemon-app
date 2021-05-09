@@ -36,19 +36,24 @@ export default class Card extends Component{
     card(pokemon){
 
         return(
+            <div className="main">
 
-            <div>
+                <div className="pokedex">
 
-                <h1> Nome: {pokemon.pokemon.name} </h1>
+                    <div className="pokemon">
+                        <img src={pokemon.pokemon.sprites.front_default} className="Pokemon-imagem"></img>
+                        <h1>{pokemon.pokemon.name} </h1>
+                    </div>
+                    
+                    <div className="status">
+                        <h2> Tipo: {pokemon.pokemon.types.map(item => ' ' + item.type.name).toString()} </h2>
+                    
+                        <h2> Peso: {pokemon.pokemon.weight}  </h2>
+                    
+                        <h2> Altura: {pokemon.pokemon.height}  </h2>
+                    </div>
 
-                <img src={pokemon.pokemon.sprites.front_default} className="Pokemon-imagem"></img>
-            
-                <h2> Tipo: {pokemon.pokemon.types.map(item => ' ' + item.type.name).toString()} </h2>
-            
-                <h2> Peso: {pokemon.pokemon.weight}  </h2>
-            
-                <h2> Altura: {pokemon.pokemon.height}  </h2>
-
+                </div>
             </div>
 
         )

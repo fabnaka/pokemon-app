@@ -1,3 +1,33 @@
 .Pokemon-imagem{
     height: 25vmin;
+    margin-top: -100px;
+}
+
+@font-face {
+    font-family:  pokemon;
+    src: url(../fontes/pokemon.TTF)
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.pokedex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding:10px 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    height: 250px;
+}
+h1 {
+    font-family: pokemon;
+    margin-top: -10px;
+
+}
+h2 {
+    font-family: pokemon;
 }

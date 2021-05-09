@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import '../css/BarraPesquisa.css'
 
 export default class BarraPesquisa extends Component{
 
@@ -56,10 +57,9 @@ export default class BarraPesquisa extends Component{
     render(){
         return(
 
-            <div>
-                <h2> Insira o nome do pokemon e clique em pesquisar </h2>
-                <input type="text" placeholder="Insira o nome do pokemon" onChange={(event)=>{this.setState({pokemon_nome:event.target.value})}}></input>
-                <input type="button" value="Pesquisar" onClick={this.requisicaoSite}></input>
+            <div className="search">
+                <input type="text"  className="txtbusca" placeholder="Insira o nome do pokemon" onChange={(event)=>{this.setState({pokemon_nome:event.target.value})}}></input>
+                <input type="button" className="btnBusca" value="Pesquisar" onClick={this.requisicaoSite}></input>
 
                 <div>
                     {this.props.render(this.state)}
